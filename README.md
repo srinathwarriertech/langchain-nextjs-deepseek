@@ -31,7 +31,7 @@ Steps to run this repo:
 - Open http://localhost:3000/ 
 
 Files to edit to build your own custom bot (Optional):
-- Update your [prompt](app/api/prompt.ts)
+- Update your [prompt](data/prompt.ts)
 - Update the [RAG Document](data/NeuroMastery-coursedetails.ts) which will get uploaded to your vectorstore in Supabase.
 - Update the AI Agent tools in a single file [tools.ts](app/api/tools.ts)
 
