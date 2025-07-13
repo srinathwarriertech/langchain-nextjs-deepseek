@@ -5,7 +5,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {ChatGroq} from "@langchain/groq";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { HttpResponseOutputParser } from "langchain/output_parsers";
-import { getDefaultPromptChat } from "../prompt";
+import { getDefaultPromptChat } from "../../../data/prompt";
 
 export const runtime = "edge";
 

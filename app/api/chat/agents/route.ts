@@ -13,7 +13,7 @@ import {
   HumanMessage,
   SystemMessage,
 } from "@langchain/core/messages";
-import { getDefaultPromptAgent } from "../../prompt";
+import { getDefaultPromptAgent } from "../../../../data/prompt";
 import { getDiscoveryCallDetails, getSimilarCoursesTool, getWeatherTool } from "../../tools";
 
 export const runtime = "edge";

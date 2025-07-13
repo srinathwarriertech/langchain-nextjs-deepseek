@@ -5,7 +5,7 @@ import { z } from "zod";
 import { ChatOpenAI } from "@langchain/openai";
 import {ChatGroq} from "@langchain/groq";
 import { PromptTemplate } from "@langchain/core/prompts";
-import { getDefaultPromptStructuredOutput } from "../../prompt";
+import { getDefaultPromptStructuredOutput } from "../../../../data/prompt";
 
 
 export const runtime = "edge";
