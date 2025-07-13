@@ -41,6 +41,8 @@ export default function AgentsPage() {
           <span className="ml-2">
             By default, the agent can handle questions on NeuroMastery Bootcamp, but you
             can edit the prompt to whatever you want!
+            <br />
+            <b>Try asking "Find Similar Courses"</b>
           </span>
         </li>
         <li className="hidden text-l md:block">

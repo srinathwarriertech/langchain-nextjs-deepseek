@@ -40,6 +40,8 @@ export default function AgentsPage() {
               <span className="ml-2">
                 Then, it queries the retriever for documents similar to the
                 dereferenced question and composes an answer.
+                <br />
+                <b>Try asking "What are the outcomes of the course?"</b>
               </span>
             </li>
           </ul>

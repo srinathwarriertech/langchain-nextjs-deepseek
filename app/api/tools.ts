@@ -29,7 +29,7 @@ export const getWeatherTool = tool((input) =>{
 export const getSimilarCoursesTool = tool(async (input) =>{
   console.log("inside getSimilarCoursesTool 1");
   const chat = new ChatGroq({
-    model: "deepseek-r1-distill-qwen-32b",
+    model: "qwen-qwq-32b",
     temperature: 0,
     apiKey: process.env.GROQ_API_KEY 
     // other params...
