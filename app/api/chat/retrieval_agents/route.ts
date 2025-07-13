@@ -16,7 +16,8 @@ import {ChatGroq} from "@langchain/groq";
 import { HuggingFaceInferenceEmbeddings } from "@langchain/community/embeddings/hf";
 import { createRetrieverTool } from "langchain/tools/retriever";
 import { createReactAgent } from "@langchain/langgraph/prebuilt";
-import { getDiscoveryCallDetails } from "../../tools";
+import { getDiscoveryCallDetails,getSimilarCoursesTool } from "../../tools";
+
 
 export const runtime = "edge";
 
@@ -108,13 +109,14 @@ export async function POST(req: NextRequest) {
     });
 
     const discoveryCallDetailsTool = getDiscoveryCallDetails;
+    const similarCoursesTool = getSimilarCoursesTool;
 
     /**
      * Use a prebuilt LangGraph agent.
      */
     const agent = await createReactAgent({
       llm: chatModel,
-      tools: [retrieverTool ,discoveryCallDetailsTool],
+      tools: [retrieverTool ,discoveryCallDetailsTool,similarCoursesTool],
       /**
        * Modify the stock prompt in the prebuilt agent. See docs
        * for how to customize your agent:

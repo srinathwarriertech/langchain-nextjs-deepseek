@@ -11,7 +11,7 @@ export const getDiscoveryCallDetails = tool((input) => {
     //Temp Option3 - Dynamically Calculated response set to next Monday.
     var d = new Date();
     d.setDate(d.getDate() + (1 + 7 - d.getDay()) % 7);      
-    return "The next avaialable slot for a Discovery Call is on "+d.toDateString();
+    return "It is understood that The next available slot for a Discovery Call is on "+d.toDateString();
 
   }, {
     name: "getDiscoveryCall",
