@@ -11,8 +11,7 @@ import {
   HumanMessage,
   SystemMessage,
 } from "@langchain/core/messages";
-import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import {ChatGroq} from "@langchain/groq";
+import { ChatGroq} from "@langchain/groq";
 import { HuggingFaceInferenceEmbeddings } from "@langchain/community/embeddings/hf";
 import { createRetrieverTool } from "langchain/tools/retriever";
 import { createReactAgent } from "@langchain/langgraph/prebuilt";
@@ -72,10 +71,6 @@ export async function POST(req: NextRequest) {
       .map(convertVercelMessageToLangChainMessage);
     const returnIntermediateSteps = body.show_intermediate_steps;
 
-    // const chatModel = new ChatOpenAI({
-    //   model: "gpt-4o-mini",
-    //   temperature: 0.2,
-    // });
     const chatModel = new ChatGroq({
       model: "mistral-saba-24b",
       temperature: 0,

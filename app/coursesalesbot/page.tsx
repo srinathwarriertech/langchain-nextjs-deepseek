@@ -1,15 +1,7 @@
 import { ChatWindow } from "@/components/ChatWindow";
-import { GuideInfoBox } from "@/components/guide/GuideInfoBox";
-import { useLayout } from "@/context/LayoutContext";
 
 export default function AgentsPage() {
 
-//   const InfoCard = (
-    // <GuideInfoBox>
-        
-      
-    // </GuideInfoBox>
-//   );
 
   return (
     <ChatWindow
